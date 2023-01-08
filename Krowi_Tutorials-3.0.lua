@@ -99,7 +99,7 @@ local default = {
 	Width = 50,
 	Title = "Tutorial",
 	ImageSize = {
-		Width = 0,
+		Width = 0, --isal?
 		Height = 0
 	},
 	ImageTexCoord = {0, 1, 0, 1},
@@ -128,7 +128,7 @@ local function Copy_Table(src, dest)
 			dest[index] = {}
 			Copy_Table(value, dest[index])
 		else
-			dest[index] = value
+			dest[index] = value --got 1
 		end
 	end
 end
